@@ -109,8 +109,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           // Logo
-          Image.network(
-            'https://lh3.googleusercontent.com/aida-public/AB6AXuAPMt1lNzpUDKu7l1l4nghLhAY7FcRx8eb7W_bsc-2BVvxLQPTXXnsiN9xA6xclAVWe6m_Fqwt1iDy4xMV8GGmj_TxGuhfzUb280k1Riy_jP3HeGAOjn0MM7Qj4xFp8qdiR-YP_jpxuEsRYB_7k8vpkXV4el8Yi9hZYUxqSev3y8KYsfHwHeSZU2xMgeU9GWCJbHMq8f3vWnspyHI58152zfVMajSTLqUgGNrddmUGkKCXHSdeq_hjXXcvFD7eUvfd2O-HtIxNsbbvG',
+          Image.asset(
+            'assets/images/head_logo.png',
             height: 32,
             errorBuilder: (context, error, stackTrace) {
               return Container(

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "198271394931",
+    "project_id": "kwentaph-a061a",
+    "storage_bucket": "kwentaph-a061a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198271394931:android:67d20ce7fdb9368a2ff606",
+        "android_client_info": {
+          "package_name": "com.example.bill_split_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVeZdVKBVUC136Kv_o0STlTlL4lK23L8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

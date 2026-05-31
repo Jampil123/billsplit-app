@@ -166,23 +166,20 @@ class _LoginScreenState extends State<LoginScreen> {
       color: const Color(0xFFF8F9FF),
       child: Row(
         children: [
-          IconButton(
-            onPressed: () {
-              Navigator.pop(context);
+          const SizedBox(width: 8),
+          Image.asset(
+            'assets/images/head_logo.png',
+            height: 40,
+            errorBuilder: (context, error, stackTrace) {
+              return Text(
+                'KwentaPH',
+                style: GoogleFonts.inter(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w700,
+                  color: const Color(0xFF0B1C30),
+                ),
+              );
             },
-            icon: const Icon(Icons.arrow_back),
-            color: const Color(0xFF006C49),
-          ),
-          const SizedBox(width: 8),
-          const Icon(Icons.payments, color: Color(0xFF006C49), size: 28),
-          const SizedBox(width: 8),
-          Text(
-            'KwentaPH',
-            style: GoogleFonts.inter(
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
-              color: const Color(0xFF0B1C30),
-            ),
           ),
         ],
       ),
@@ -489,11 +486,15 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.network(
-                  'https://lh3.googleusercontent.com/aida-public/AB6AXuAIGmJM7Wnuyh6itlvoJpTlyimb4MgkT2-kIMob4yWO9fgjPIO-t3jb-2K1zMFL_bOjAvMgiQF-ka14AD6l_j_vDNcRK-S85RaS-PkuX4i5N96NHRawN_2J4FyI3WBEOFihZZnV1sQjOdMBCmLwz9cD2iCm3YKoue1PCSUITub1N4Jr39hnFS3gfy1BTG4VgTc9M212qgareKTkXK1xbNZc7ULZ6DQDvJtehHbWMd4EYRgk6bcU9b9Q8G_cJKHe2_AyINMKfO048zmU',
+                  'https://www.gstatic.com/images/branding/product/1x/googleg_120.png',
                   width: 20,
                   height: 20,
                   errorBuilder: (context, error, stackTrace) {
-                    return const Icon(Icons.g_mobiledata, size: 20);
+                    return const Icon(
+                      Icons.g_mobiledata,
+                      color: Color(0xFF4285F4),
+                      size: 20,
+                    );
                   },
                 ),
                 const SizedBox(width: 8),
@@ -523,11 +524,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(
-                  Icons.people_alt,
-                  color: Color(0xFF1877F2),
-                  size: 20,
-                ),
+                const Icon(Icons.facebook, color: Color(0xFF1877F2), size: 20),
                 const SizedBox(width: 8),
                 Text(
                   'Facebook',

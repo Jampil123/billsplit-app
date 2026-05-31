@@ -92,14 +92,19 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       color: const Color(0xFFF8F9FF),
       child: Row(
         children: [
-          const SizedBox(width: 8),
-          Text(
-            'KwentaPH',
-            style: GoogleFonts.inter(
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
-              color: const Color(0xFF0B1C30),
-            ),
+          Image.asset(
+            'assets/images/head_logo.png',
+            height: 40,
+            errorBuilder: (context, error, stackTrace) {
+              return Text(
+                'KwentaPH',
+                style: GoogleFonts.inter(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w700,
+                  color: const Color(0xFF0B1C30),
+                ),
+              );
+            },
           ),
         ],
       ),

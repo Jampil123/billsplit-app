@@ -175,15 +175,19 @@ class _GuestScreenState extends State<GuestScreen> {
         children: [
           Row(
             children: [
-              const Icon(Icons.payments, color: Color(0xFF006C49), size: 28),
-              const SizedBox(width: 8),
-              Text(
-                'KwentaPH',
-                style: GoogleFonts.inter(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
-                  color: const Color(0xFF0B1C30),
-                ),
+              Image.asset(
+                'assets/images/head_logo.png',
+                height: 40,
+                errorBuilder: (context, error, stackTrace) {
+                  return Text(
+                    'KwentaPH',
+                    style: GoogleFonts.inter(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w700,
+                      color: const Color(0xFF0B1C30),
+                    ),
+                  );
+                },
               ),
             ],
           ),
